@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		373C323D57DF2055A2FF2CD0 /* Pods_iRail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7782A58FCFB328331F80BB9B /* Pods_iRail.framework */; };
+		9BE249AC2270CFE400A97807 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE249AB2270CFE400A97807 /* AppDelegate.swift */; };
+		9BE249B32270CFE600A97807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BE249B22270CFE600A97807 /* Assets.xcassets */; };
+		9BE249B62270CFE600A97807 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE249B42270CFE600A97807 /* LaunchScreen.storyboard */; };
+		9BE249C02270D03200A97807 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE249BF2270D03200A97807 /* HomeViewController.swift */; };
+		9BE249C22270D04900A97807 /* StationDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE249C12270D04900A97807 /* StationDataViewController.swift */; };
+		9BE249C42270D05F00A97807 /* CurrentTrainsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE249C32270D05F00A97807 /* CurrentTrainsViewController.swift */; };
+		9BE249C62270D07700A97807 /* TrainStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE249C52270D07700A97807 /* TrainStatusViewController.swift */; };
+		9BE249C82270D09A00A97807 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE249C72270D09A00A97807 /* ViewControllerExtension.swift */; };
+		9BE249CE2270D12700A97807 /* URLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE249CD2270D12700A97807 /* URLConstants.swift */; };
+		9BE249D02270D14000A97807 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE249CF2270D14000A97807 /* ApiClient.swift */; };
+		9BE249D22270D15E00A97807 /* StationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE249D12270D15E00A97807 /* StationModel.swift */; };
+		9BE249D42270D16A00A97807 /* TrainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE249D32270D16A00A97807 /* TrainModel.swift */; };
+		9BE249D62270D19900A97807 /* RailServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE249D52270D19900A97807 /* RailServices.swift */; };
+		9BE249D82270D1EF00A97807 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE249D72270D1EF00A97807 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B946796E99C92D3D0377E76 /* Pods-iRail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iRail.release.xcconfig"; path = "Pods/Target Support Files/Pods-iRail/Pods-iRail.release.xcconfig"; sourceTree = "<group>"; };
+		7782A58FCFB328331F80BB9B /* Pods_iRail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iRail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BE249A82270CFE400A97807 /* iRail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iRail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BE249AB2270CFE400A97807 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9BE249B22270CFE600A97807 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BE249B52270CFE600A97807 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BE249B72270CFE600A97807 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BE249BF2270D03200A97807 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9BE249C12270D04900A97807 /* StationDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDataViewController.swift; sourceTree = "<group>"; };
+		9BE249C32270D05F00A97807 /* CurrentTrainsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTrainsViewController.swift; sourceTree = "<group>"; };
+		9BE249C52270D07700A97807 /* TrainStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainStatusViewController.swift; sourceTree = "<group>"; };
+		9BE249C72270D09A00A97807 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		9BE249CD2270D12700A97807 /* URLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstants.swift; sourceTree = "<group>"; };
+		9BE249CF2270D14000A97807 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		9BE249D12270D15E00A97807 /* StationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationModel.swift; sourceTree = "<group>"; };
+		9BE249D32270D16A00A97807 /* TrainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainModel.swift; sourceTree = "<group>"; };
+		9BE249D52270D19900A97807 /* RailServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailServices.swift; sourceTree = "<group>"; };
+		9BE249D72270D1EF00A97807 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C98687A543152624CCA95C71 /* Pods-iRail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iRail.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iRail/Pods-iRail.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BE249A52270CFE400A97807 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				373C323D57DF2055A2FF2CD0 /* Pods_iRail.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1243C54909684F07C0B16830 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C98687A543152624CCA95C71 /* Pods-iRail.debug.xcconfig */,
+				6B946796E99C92D3D0377E76 /* Pods-iRail.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		503C307B290999DBF2AD5B8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7782A58FCFB328331F80BB9B /* Pods_iRail.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BE2499F2270CFE400A97807 = {
+			isa = PBXGroup;
+			children = (
+				9BE249AA2270CFE400A97807 /* iRail */,
+				9BE249A92270CFE400A97807 /* Products */,
+				1243C54909684F07C0B16830 /* Pods */,
+				503C307B290999DBF2AD5B8C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9BE249A92270CFE400A97807 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BE249A82270CFE400A97807 /* iRail.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BE249AA2270CFE400A97807 /* iRail */ = {
+			isa = PBXGroup;
+			children = (
+				9BE249C92270D0F400A97807 /* Networking */,
+				9BE249BD2270D00000A97807 /* UI */,
+				9BE249AB2270CFE400A97807 /* AppDelegate.swift */,
+				9BE249B22270CFE600A97807 /* Assets.xcassets */,
+				9BE249D72270D1EF00A97807 /* Main.storyboard */,
+				9BE249B42270CFE600A97807 /* LaunchScreen.storyboard */,
+				9BE249B72270CFE600A97807 /* Info.plist */,
+			);
+			path = iRail;
+			sourceTree = "<group>";
+		};
+		9BE249BD2270D00000A97807 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9BE249BE2270D01100A97807 /* ViewControllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9BE249BE2270D01100A97807 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9BE249BF2270D03200A97807 /* HomeViewController.swift */,
+				9BE249C12270D04900A97807 /* StationDataViewController.swift */,
+				9BE249C32270D05F00A97807 /* CurrentTrainsViewController.swift */,
+				9BE249C52270D07700A97807 /* TrainStatusViewController.swift */,
+				9BE249C72270D09A00A97807 /* ViewControllerExtension.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9BE249C92270D0F400A97807 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9BE249CC2270D11400A97807 /* ApiClient */,
+				9BE249CB2270D10F00A97807 /* Models */,
+				9BE249CA2270D10700A97807 /* Services */,
+				9BE249CD2270D12700A97807 /* URLConstants.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9BE249CA2270D10700A97807 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9BE249D52270D19900A97807 /* RailServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9BE249CB2270D10F00A97807 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9BE249D12270D15E00A97807 /* StationModel.swift */,
+				9BE249D32270D16A00A97807 /* TrainModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9BE249CC2270D11400A97807 /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				9BE249CF2270D14000A97807 /* ApiClient.swift */,
+			);
+			path = ApiClient;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BE249A72270CFE400A97807 /* iRail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BE249BA2270CFE600A97807 /* Build configuration list for PBXNativeTarget "iRail" */;
+			buildPhases = (
+				4387D62BA5EF21F4F6F75586 /* [CP] Check Pods Manifest.lock */,
+				9BE249A42270CFE400A97807 /* Sources */,
+				9BE249A52270CFE400A97807 /* Frameworks */,
+				9BE249A62270CFE400A97807 /* Resources */,
+				4829B90C44B806ED241C8B64 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iRail;
+			productName = iRail;
+			productReference = 9BE249A82270CFE400A97807 /* iRail.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BE249A02270CFE400A97807 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Sri Anumala";
+				TargetAttributes = {
+					9BE249A72270CFE400A97807 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 9BE249A32270CFE400A97807 /* Build configuration list for PBXProject "iRail" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BE2499F2270CFE400A97807;
+			productRefGroup = 9BE249A92270CFE400A97807 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BE249A72270CFE400A97807 /* iRail */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BE249A62270CFE400A97807 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BE249D82270D1EF00A97807 /* Main.storyboard in Resources */,
+				9BE249B62270CFE600A97807 /* LaunchScreen.storyboard in Resources */,
+				9BE249B32270CFE600A97807 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4387D62BA5EF21F4F6F75586 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iRail-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4829B90C44B806ED241C8B64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iRail/Pods-iRail-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/XMLParsing/XMLParsing.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMLParsing.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iRail/Pods-iRail-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BE249A42270CFE400A97807 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BE249C62270D07700A97807 /* TrainStatusViewController.swift in Sources */,
+				9BE249D22270D15E00A97807 /* StationModel.swift in Sources */,
+				9BE249D02270D14000A97807 /* ApiClient.swift in Sources */,
+				9BE249C82270D09A00A97807 /* ViewControllerExtension.swift in Sources */,
+				9BE249D62270D19900A97807 /* RailServices.swift in Sources */,
+				9BE249D42270D16A00A97807 /* TrainModel.swift in Sources */,
+				9BE249C22270D04900A97807 /* StationDataViewController.swift in Sources */,
+				9BE249AC2270CFE400A97807 /* AppDelegate.swift in Sources */,
+				9BE249CE2270D12700A97807 /* URLConstants.swift in Sources */,
+				9BE249C02270D03200A97807 /* HomeViewController.swift in Sources */,
+				9BE249C42270D05F00A97807 /* CurrentTrainsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9BE249B42270CFE600A97807 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BE249B52270CFE600A97807 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BE249B82270CFE600A97807 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9BE249B92270CFE600A97807 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BE249BB2270CFE600A97807 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C98687A543152624CCA95C71 /* Pods-iRail.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3PY76QK6Q;
+				INFOPLIST_FILE = iRail/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sri.iRail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9BE249BC2270CFE600A97807 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B946796E99C92D3D0377E76 /* Pods-iRail.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3PY76QK6Q;
+				INFOPLIST_FILE = iRail/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sri.iRail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BE249A32270CFE400A97807 /* Build configuration list for PBXProject "iRail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BE249B82270CFE600A97807 /* Debug */,
+				9BE249B92270CFE600A97807 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BE249BA2270CFE600A97807 /* Build configuration list for PBXNativeTarget "iRail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BE249BB2270CFE600A97807 /* Debug */,
+				9BE249BC2270CFE600A97807 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BE249A02270CFE400A97807 /* Project object */;
+}

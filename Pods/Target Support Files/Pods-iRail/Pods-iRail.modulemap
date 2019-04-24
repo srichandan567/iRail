@@ -1,0 +1,6 @@
+framework module Pods_iRail {
+  umbrella header "Pods-iRail-umbrella.h"
+
+  export *
+  module * { export * }
+}
