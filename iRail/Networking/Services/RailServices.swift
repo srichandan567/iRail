@@ -9,11 +9,14 @@
 import Foundation
 import XMLParsing
 
+class StationService{
+    static var sharedInstance = StationService()
+}
 func getAllStations(success:@escaping ([Station]) -> Void, failure:@escaping (Error) -> Void){
     let url = URLS.baseurl + URLS.getStations
     ApiClient.requestGETURL(url, success:{ data in
         guard let responseData = data else{
-            success([])
+            success([]) // FAIL
             return
         }
         let decoder = XMLDecoder()

@@ -96,13 +96,13 @@
 		9BE249AA2270CFE400A97807 /* iRail */ = {
 			isa = PBXGroup;
 			children = (
-				9BE249C92270D0F400A97807 /* Networking */,
 				9BE249BD2270D00000A97807 /* UI */,
+				9BE249C92270D0F400A97807 /* Networking */,
 				9BE249AB2270CFE400A97807 /* AppDelegate.swift */,
 				9BE249B22270CFE600A97807 /* Assets.xcassets */,
-				9BE249D72270D1EF00A97807 /* Main.storyboard */,
-				9BE249B42270CFE600A97807 /* LaunchScreen.storyboard */,
 				9BE249B72270CFE600A97807 /* Info.plist */,
+				9BE249B42270CFE600A97807 /* LaunchScreen.storyboard */,
+				9BE249D72270D1EF00A97807 /* Main.storyboard */,
 			);
 			path = iRail;
 			sourceTree = "<group>";
