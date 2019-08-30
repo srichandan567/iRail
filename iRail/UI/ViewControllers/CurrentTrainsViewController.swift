@@ -12,7 +12,7 @@ protocol CurrentTrainDelegate {
     func openMapsforTrain(indexPath: IndexPath?)
     func showTrainCurrentStatus(indexPath: IndexPath?)
 }
-
+//MARK:- Classes
 class CurrentTrainsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, CurrentTrainDelegate, UISearchBarDelegate {
     @IBOutlet var tableView: UITableView!
     @IBOutlet var searchBar: UISearchBar!
@@ -89,7 +89,7 @@ class CurrentTrainsViewController: UIViewController, UITableViewDataSource, UITa
     }
 }
 
-
+//b
 
 class RunningTrainTableViewCell: UITableViewCell{
     @IBOutlet var trainCodeLabel: UILabel!
